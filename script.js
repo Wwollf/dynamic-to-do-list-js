@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    taskInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
+    taskInput.addEventListener('keypress', (event) => {
+        if (event.key === 'Enter') {
             const taskText = taskInput.value.trim();
             if (taskText === '') {
                 alert('Please enter a task.');
